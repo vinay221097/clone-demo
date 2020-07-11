@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Django Udemy Clone</title>
+
+    {% include 'partials/header.html' %}
+</head>
+<body class="gray-bg">
+{% include 'partials/navbar.html' %}
+
+{% block content %}{% endblock %}
+<div id="light">
+  <a class="boxclose" id="boxclose" onclick="lightbox_close('VisaChipCardVideo');"></a>
+  
+<iframe width="560" id="VisaChipCardVideo" height="315" src="https://www.youtube.com/embed/RuckLtuInNY" frameborder="0" autoplay=1 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="fade" onClick="lightbox_close('VisaChipCardVideo');"></div>
+{% include 'partials/footer.html' %}
+{% include 'partials/scripts.html' %}
+</body>
+</html>
